@@ -10,7 +10,7 @@ var table = $('.tablaProductos').DataTable({
 		{
 			"targets": -9,
 			 "data": null,
-			 "defaultContent": '<img class="img-thumbnail imgTabla" width="40px">'
+			 "defaultContent": '<img src="" class="img-thumbnail imgTabla" width="40px">'
 
 		},
 
@@ -84,9 +84,7 @@ function cargarImagenes(){
 	var imgTabla = $(".imgTabla");
 
 	for(var i = 0; i < imgTabla.length; i ++){
-
 		var data = table.row( $(imgTabla[i]).parents("tr")).data();	
-
 		$(imgTabla[i]).attr("src", data[1]);
 
 	}
@@ -101,7 +99,7 @@ setTimeout(function(){
 
 	cargarImagenes();
 
-},300)
+},3000)
 
 /*=============================================
 CARGAMOS LAS IMÁGENES CUANDO INTERACTUAMOS CON EL PAGINADOR
