@@ -4,7 +4,7 @@
     
     <h1>
       
-      Administrar Clientes
+      Administrar clientes
     
     </h1>
 
@@ -12,7 +12,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar Clientes</li>
+      <li class="active">Administrar clientes</li>
     
     </ol>
 
@@ -26,7 +26,7 @@
   
         <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
           
-          Agregar Cliente
+          Agregar cliente
 
         </button>
 
@@ -40,19 +40,19 @@
          
          <tr>
            
-          <th style="width:10px">#</th>
-          <th>Nombre</th>
-          <th>Documento</th>
-          <th>Email</th>
-          <th>Telefono</th>
-          <th>Direccion</th>
-          <th>Fecha Nacimiento</th>
-          <th>Total compras</th>
-          <th>Ultima compra</th>
-          <th>Ingreso al sistema</th>
-          <th>Acciones</th>
+           <th style="width:10px">#</th>
+           <th>Nombre</th>
+           <th>Documento ID</th>
+           <th>Email</th>
+           <th>Teléfono</th>
+           <th>Dirección</th>
+           <th>Fecha nacimiento</th> 
+           <th>Total compras</th>
+           <th>Última compra</th>
+           <th>Ingreso al sistema</th>
+           <th>Acciones</th>
 
-         </tr>
+         </tr> 
 
         </thead>
 
@@ -62,59 +62,23 @@
 
             <td>1</td>
 
-            <td>Cosme Fulanito</td>
+            <td>Juan Villegas</td>
 
-            <td>11111111</td>
+            <td>8161123</td>
 
-            <td>cosme@fulanito.com</td>
+            <td>juan@hotmail.com</td>
 
-            <td>0342155555555</td>
+            <td>555 57 67</td>
 
-            <td>Calle Falsa 123 - Santa Fe</td>
+            <td>calle 27 # 40 - 36</td>
 
-            <td>01/01/1989</td>
+            <td>1982-15-11</td>
 
-            <td>45</td>
+            <td>2017-12-11 12:05:32</td>
 
-            <td>01/01/1989</td>
+            <td>35</td>
 
-            <td>01/01/1989 00:00:00</td>
-
-            <td>
-
-              <div class="btn-group">
-                  
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-
-              </div>  
-
-            </td>
-
-          </tr>
-
-          <tr>
-
-            <td>1</td>
-
-            <td>Cosme Fulanito</td>
-
-            <td>11111111</td>
-
-            <td>cosme@fulanito.com</td>
-
-            <td>0342155555555</td>
-
-            <td>Calle Falsa 123 - Santa Fe</td>
-
-            <td>1989-01-01</td>
-
-            <td>45</td>
-
-            <td>1989-01-01</td>
-
-            <td>1989-01-01 00:00:00</td>
+            <td>2017-12-11 12:05:32</td>
 
             <td>
 
@@ -130,6 +94,7 @@
 
           </tr>
 
+          
         </tbody>
 
        </table>
@@ -162,7 +127,7 @@ MODAL AGREGAR CLIENTE
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar Cliente</h4>
+          <h4 class="modal-title">Agregar cliente</h4>
 
         </div>
 
@@ -188,6 +153,8 @@ MODAL AGREGAR CLIENTE
 
             </div>
 
+            <!-- ENTRADA PARA EL DOCUMENTO ID -->
+            
             <div class="form-group">
               
               <div class="input-group">
@@ -200,6 +167,8 @@ MODAL AGREGAR CLIENTE
 
             </div>
 
+            <!-- ENTRADA PARA EL EMAIL -->
+            
             <div class="form-group">
               
               <div class="input-group">
@@ -212,42 +181,48 @@ MODAL AGREGAR CLIENTE
 
             </div>
 
+            <!-- ENTRADA PARA EL TELÉFONO -->
+            
             <div class="form-group">
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar telefono celular" data-inputmask="'mask':'(999)999-999999'" data-mask required>
+                <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'(999) 999-9999'" data-mask required>
 
               </div>
 
             </div>
 
+            <!-- ENTRADA PARA LA DIRECCIÓN -->
+            
             <div class="form-group">
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-map-marker"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar direccion"  required>
+                <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar dirección" required>
 
               </div>
 
             </div>
 
+             <!-- ENTRADA PARA LA FECHA DE NACIMIENTO -->
+            
             <div class="form-group">
               
               <div class="input-group">
               
                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias':'yyyy/mm/dd'" data-mask required>
+                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
 
               </div>
 
             </div>
-
+  
           </div>
 
         </div>
@@ -260,7 +235,7 @@ MODAL AGREGAR CLIENTE
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
 
-          <button type="submit" class="btn btn-primary">Guardar Cliente</button>
+          <button type="submit" class="btn btn-primary">Guardar cliente</button>
 
         </div>
 

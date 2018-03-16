@@ -86,7 +86,7 @@
 
                     <td>'.$value["compras"].'</td>
 
-                    <td>0000-00-00 00:00:00</td>
+                    <td>'.$value["ultima_compra"].'</td>
 
                     <td>'.$value["fecha"].'</td>
 
@@ -94,11 +94,15 @@
 
                       <div class="btn-group">
                           
-                        <button class="btn btn-warning btnEditarCliente" data-toggle="modal" data-target="#modalEditarCliente" idCliente="'.$value["id"].'"><i class="fa fa-pencil"></i></button>
+                        <button class="btn btn-warning btnEditarCliente" data-toggle="modal" data-target="#modalEditarCliente" idCliente="'.$value["id"].'"><i class="fa fa-pencil"></i></button>';
 
-                        <button class="btn btn-danger btnEliminarCliente" idCliente="'.$value["id"].'"><i class="fa fa-times"></i></button>
+                      if($_SESSION["perfil"] == "Administrador"){
 
-                      </div>  
+                          echo '<button class="btn btn-danger btnEliminarCliente" idCliente="'.$value["id"].'"><i class="fa fa-times"></i></button>';
+
+                      }
+
+                      echo '</div>  
 
                     </td>
 
@@ -422,3 +426,5 @@ MODAL EDITAR CLIENTE
   $eliminarCliente -> ctrEliminarCliente();
 
 ?>
+
+

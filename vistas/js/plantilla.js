@@ -48,6 +48,10 @@ $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
   radioClass   : 'iradio_minimal-blue'
 })
 
+/*=============================================
+ //input Mask
+=============================================*/
+
 //Datemask dd/mm/yyyy
 $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
 //Datemask2 mm/dd/yyyy

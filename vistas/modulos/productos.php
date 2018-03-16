@@ -59,6 +59,8 @@
 
        </table>
 
+       <input type="hidden" value="<?php echo $_SESSION['perfil']; ?>" class="perfilUsuario">
+
       </div>
 
     </div>

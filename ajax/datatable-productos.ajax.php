@@ -16,11 +16,12 @@ class TablaProductos{
 
   	$item = null;
     $valor = null;
+    $orden = "id";
 
-  	$productos = ControladorProductos::ctrMostrarProductos($item, $valor);
+  	$productos = ControladorProductos::ctrMostrarProductos($item, $valor, $orden);
 
   	echo '{
-		"data": [';
+			"data": [';
 
 			for($i = 0; $i < count($productos)-1; $i++){
 

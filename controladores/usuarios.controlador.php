@@ -351,7 +351,7 @@ class ControladorUsuarios{
 									  title: "¡La contraseña no puede ir vacía o llevar caracteres especiales!",
 									  showConfirmButton: true,
 									  confirmButtonText: "Cerrar"
-									  }).then(function(result){
+									  }).then(function(result) {
 										if (result.value) {
 
 										window.location = "usuarios";
@@ -386,7 +386,7 @@ class ControladorUsuarios{
 						  title: "El usuario ha sido editado correctamente",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
-						  }).then(function(result){
+						  }).then(function(result) {
 									if (result.value) {
 
 									window.location = "usuarios";
@@ -408,7 +408,7 @@ class ControladorUsuarios{
 						  title: "¡El nombre no puede ir vacío o llevar caracteres especiales!",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
-						  }).then(function(result){
+						  }).then(function(result) {
 							if (result.value) {
 
 							window.location = "usuarios";
@@ -452,8 +452,9 @@ class ControladorUsuarios{
 					  type: "success",
 					  title: "El usuario ha sido borrado correctamente",
 					  showConfirmButton: true,
-					  confirmButtonText: "Cerrar"
-					  }).then(function(result){
+					  confirmButtonText: "Cerrar",
+					  closeOnConfirm: false
+					  }).then(function(result) {
 								if (result.value) {
 
 								window.location = "usuarios";
